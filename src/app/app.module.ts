@@ -10,6 +10,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipes-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoopingEditComponent } from './shopping-list/shooping-edit/shooping-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ShoopingEditComponent } from './shopping-list/shooping-edit/shooping-ed
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
     
   ],
   providers: [],
