@@ -8,16 +8,10 @@ import { Recipe } from './recipe.model';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent implements OnInit {
-  @Input() recipeDet: Recipe;
-  
+  recipeReceived: Recipe;
   constructor() { }
 
   ngOnInit(): void {
   }
-  onSetRecipe(recipe){
-    this.recipeDet = recipe
-    console.log('log of recepi in recipe component'+ recipe);
-    console.log('log of recepi detected in recepi component'+this.recipeDet);
-    
-  }
+
 }
