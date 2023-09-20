@@ -5,13 +5,13 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeItemComponent } from './recipes/recipes-list/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/recipes', pathMatch: 'full' },
   { path: 'recipes', component: RecipesComponent, children: [
-    { path: 'item', component: RecipeItemComponent, children: [
-      { path: 'detail', component: RecipeDetailComponent }
-    ] }
+    { path: '', component: RecipeStartComponent },
+    { path: ':id', component: RecipeDetailComponent }
   ]},
   { path: 'shopping-list', component: ShoppingListComponent },
   //{ path: '**', redirectTo: '/'}
