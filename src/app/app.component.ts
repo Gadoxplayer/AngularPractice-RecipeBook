@@ -6,11 +6,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loadedFeature: string = 'recipe';
+  //loadedFeature: string = 'recipe';
 
   title = 'je-angular-pj';
   
-  onNavigate(featureNavigation: string) {
-    this.loadedFeature = featureNavigation;
-  }
+  // onNavigate(featureNavigation: string) {
+  //   this.loadedFeature = featureNavigation;
+  // }
 }
