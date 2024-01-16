@@ -28,3 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
  ## Code created with instructions from the Udemy course: Angular - The Complete Guide (2022 Edition)
+
+ Template-driven forms are asynchronous in nature, whereas Reactive forms are mostly synchronous. 3. In a template-driven approach, most of the logic is driven from the template, whereas in a reactive-driven approach, the logic resides mainly in the component or typescript code.
