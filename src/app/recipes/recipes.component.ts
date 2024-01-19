@@ -7,7 +7,7 @@ import { RecipeService } from './recipe.service';
   selector: 'app-recipes',
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.css'],
-  providers: [RecipeService]
+  //providers: [RecipeService] fixes issue when navigating away and the data wont get lost anymore, Now if you provide your service inside your module, it will be global and if you have two instance of your component, they will share the same instance of the service.
 })
 export class RecipesComponent implements OnInit {
   //recipeReceived: Recipe;
