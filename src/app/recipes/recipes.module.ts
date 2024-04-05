@@ -27,12 +27,12 @@ import { RecipesRoutingModule } from "./recipes-routing.module";
         RecipesRoutingModule
     ],
     exports: [
-        RecipesComponent,
-        RecipesListComponent,
-        RecipeDetailComponent,
-        RecipeItemComponent,
-        RecipeStartComponent,
-        RecipeEditComponent,
+        // RecipesComponent,
+        // RecipesListComponent,
+        // RecipeDetailComponent,
+        // RecipeItemComponent,
+        // RecipeStartComponent,
+        // RecipeEditComponent,
     ]
 })
 export class RecipesModule {

@@ -7,8 +7,8 @@ import { HeaderComponent } from './header/header.component';
 // import { RecipesListComponent } from './recipes/recipes-list/recipes-list.component';
 // import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 // import { RecipeItemComponent } from './recipes/recipes-list/recipe-item/recipe-item.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { ShoopingEditComponent } from './shopping-list/shooping-edit/shooping-edit.component';
+// import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+// import { ShoopingEditComponent } from './shopping-list/shooping-edit/shooping-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
@@ -22,6 +22,7 @@ import { AuhtInterceptorService } from './auth/auth-interceptor.service';
 import { AlertComponent } from './shared/alert/alet.component';
 import { PlaceholderDirective } from './shared/alert/placeholder/placeholder.directive';
 import { RecipesModule } from './recipes/recipes.module';
+import { ShoppingListModule } from './shopping-list/shopping-list.module';
 
 @NgModule({
   declarations: [
@@ -31,8 +32,8 @@ import { RecipesModule } from './recipes/recipes.module';
     // RecipesListComponent,
     // RecipeDetailComponent,
     // RecipeItemComponent,
-    ShoppingListComponent,
-    ShoopingEditComponent,
+    // ShoppingListComponent,
+    // ShoopingEditComponent,
     DropdownDirective,
     // RecipeStartComponent,
     // RecipeEditComponent,
@@ -48,7 +49,8 @@ import { RecipesModule } from './recipes/recipes.module';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    RecipesModule
+    RecipesModule,
+    ShoppingListModule
   ],
   providers: [ShoppingListService, RecipeService, {provide: HTTP_INTERCEPTORS, useClass: AuhtInterceptorService, multi: true}],
   bootstrap: [AppComponent],
