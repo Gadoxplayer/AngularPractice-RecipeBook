@@ -8,6 +8,7 @@ import { RecipeStartComponent } from "./recipe-start/recipe-start.component";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule } from "@angular/forms";
+import { RecipesRoutingModule } from "./recipes-routing.module";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from "@angular/forms";
     imports: [
         RouterModule,
         CommonModule, //This would be the borwser module, but it should onlyu be used once and only in the appmodule, the rest recieve this import 
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        RecipesRoutingModule
     ],
     exports: [
         RecipesComponent,
