@@ -23,6 +23,7 @@ import { AlertComponent } from './shared/alert/alet.component';
 import { PlaceholderDirective } from './shared/alert/placeholder/placeholder.directive';
 import { RecipesModule } from './recipes/recipes.module';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { ShoppingListModule } from './shopping-list/shopping-list.module';
     // RecipeItemComponent,
     // ShoppingListComponent,
     // ShoopingEditComponent,
-    DropdownDirective,
+    // DropdownDirective,
     // RecipeStartComponent,
     // RecipeEditComponent,
     AuthComponent,
@@ -48,9 +49,9 @@ import { ShoppingListModule } from './shopping-list/shopping-list.module';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule,
     RecipesModule,
-    ShoppingListModule
+    ShoppingListModule,
+    SharedModule
   ],
   providers: [ShoppingListService, RecipeService, {provide: HTTP_INTERCEPTORS, useClass: AuhtInterceptorService, multi: true}],
   bootstrap: [AppComponent],
