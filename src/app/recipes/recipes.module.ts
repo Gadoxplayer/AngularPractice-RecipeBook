@@ -22,7 +22,7 @@ import { SharedModule } from "../shared/shared.module";
     ],
     imports: [
         RouterModule,
-        CommonModule, //This would be the borwser module, but it should onlyu be used once and only in the appmodule, the rest recieve this import 
+        //CommonModule, //This would be the borwser module, but it should onlyu be used once and only in the appmodule, the rest recieve this import 
         ReactiveFormsModule,
         RecipesRoutingModule,
         SharedModule
@@ -36,6 +36,4 @@ import { SharedModule } from "../shared/shared.module";
         // RecipeEditComponent,
     ]
 })
-export class RecipesModule {
-
-}
+export class RecipesModule { }

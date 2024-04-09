@@ -39,9 +39,9 @@ import { SharedModule } from './shared/shared.module';
     // RecipeStartComponent,
     // RecipeEditComponent,
     AuthComponent,
-    LoadingSpinnerComponent,
-    AlertComponent,
-    PlaceholderDirective
+    // LoadingSpinnerComponent,
+    // AlertComponent,
+    // PlaceholderDirective
   ],
   imports: [
     BrowserModule,
