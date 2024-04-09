@@ -25,6 +25,7 @@ import { RecipesModule } from './recipes/recipes.module';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { CoreModule } from './core.module';
     // DropdownDirective,
     // RecipeStartComponent,
     // RecipeEditComponent,
-    AuthComponent,
+    // AuthComponent,
     // LoadingSpinnerComponent,
     // AlertComponent,
     // PlaceholderDirective
@@ -48,12 +49,12 @@ import { CoreModule } from './core.module';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule,
     HttpClientModule,
     RecipesModule,
     ShoppingListModule,
     SharedModule,
-    CoreModule
+    CoreModule,
+    AuthModule
   ],
   providers: [
     // ShoppingListService, 
