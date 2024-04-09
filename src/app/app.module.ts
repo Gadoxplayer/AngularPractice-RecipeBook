@@ -24,6 +24,7 @@ import { PlaceholderDirective } from './shared/alert/placeholder/placeholder.dir
 import { RecipesModule } from './recipes/recipes.module';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core.module';
 
 @NgModule({
   declarations: [
@@ -51,9 +52,14 @@ import { SharedModule } from './shared/shared.module';
     HttpClientModule,
     RecipesModule,
     ShoppingListModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
-  providers: [ShoppingListService, RecipeService, {provide: HTTP_INTERCEPTORS, useClass: AuhtInterceptorService, multi: true}],
+  providers: [
+    // ShoppingListService, 
+    // RecipeService, 
+    // {provide: HTTP_INTERCEPTORS, useClass: AuhtInterceptorService, multi: true}
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
