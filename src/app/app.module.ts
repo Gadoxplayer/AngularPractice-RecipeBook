@@ -22,10 +22,10 @@ import { HttpClientModule } from '@angular/common/http'
 // import { AlertComponent } from './shared/alert/alet.component';
 // import { PlaceholderDirective } from './shared/alert/placeholder/placeholder.directive';
 // import { RecipesModule } from './recipes/recipes.module';
-import { ShoppingListModule } from './shopping-list/shopping-list.module';
+// import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core.module';
-import { AuthModule } from './auth/auth.module';
+// import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -50,10 +50,8 @@ import { AuthModule } from './auth/auth.module';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ShoppingListModule,
     SharedModule,
     CoreModule,
-    AuthModule
   ],
   providers: [
     // ShoppingListService, 
