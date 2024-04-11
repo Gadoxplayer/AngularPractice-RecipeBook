@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http'
 // import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core.module';
+import { LoggingService } from './logging.service';
 // import { AuthModule } from './auth/auth.module';
 
 @NgModule({
@@ -57,6 +58,7 @@ import { CoreModule } from './core.module';
     // ShoppingListService, 
     // RecipeService, 
     // {provide: HTTP_INTERCEPTORS, useClass: AuhtInterceptorService, multi: true}
+    LoggingService
   ],
   bootstrap: [AppComponent],
 })
